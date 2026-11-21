@@ -20,6 +20,7 @@ description: Build and deliver the user's daily 7:30 AM IST Life OS brief (secur
    Sat social (someone to call / an event this weekend in Bangalore), Sun FIRE check-in.
 5. **Deliver**
    - Gmail: send to the user's own address, subject `Morning Brief — <DD Mon YYYY>`, HTML or clean text.
-   - WhatsApp (Zapier "WhatsApp Notifications"): a ≤ 1,000-character version: 5 headline bullets +
-     today's top 3 + the nudge. If the Zapier action isn't enabled/connected, skip it and say so in the email footer.
+   - WhatsApp (Zapier "WhatsApp Notifications", template `message_reminder`): the template only carries
+     a short `name` and a `link_to_reply`, so send name = "Morning Brief <DD Mon>: <top headline, ~60 chars>"
+     and link = a Gmail search link for the brief's subject. If it fails, say so in the email footer.
 6. Don't commit the brief to this public repo.
